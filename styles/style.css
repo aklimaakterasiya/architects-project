@@ -1,5 +1,4 @@
-
-body{
+body {
     /* width: 1200px; */
     margin: 0 auto;
 }
@@ -14,12 +13,13 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-.width{
+
+.width {
     width: 80%;
     margin: 0 auto;
 }
 
-header{
+header {
     background-color: rgba(255, 144, 14, 0.1);
     /* max-width: 1440px; */
     margin: 0 auto;
@@ -37,16 +37,16 @@ header{
 
 .nav-links {
     list-style: none;
-     gap: 30px;
+    gap: 30px;
 }
 
-.brand{
+.brand {
     font-size: 3rem;
     font-weight: 700;
 }
 
 /* banner section   */
-.banner h3{
+.banner h3 {
     color: rgba(19, 19, 19, 1);
     font-size: 64px;
     font-weight: 700;
@@ -54,11 +54,11 @@ header{
     margin-bottom: 20px;
 }
 
-.banner{
+.banner {
     margin: 0 auto;
 }
 
-.banner p{
+.banner p {
     color: rgba(114, 114, 114, 1);
     font-size: 16px;
     font-weight: 400;
@@ -66,7 +66,7 @@ header{
     padding: 0px 10px;
 }
 
-.btn{
+.btn {
     background-color: #FF900E;
     border-radius: 8px;
     color: white;
@@ -76,122 +76,174 @@ header{
     border: none;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     align-items: center;
     margin-bottom: 130px;
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-main > section{
+main>section {
     margin-top: 130px;
 }
 
 /* quick section  */
-.features-img{
+.features-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-.features{
+.features {
     display: flex;
     align-items: center;
 }
 
-.quick h3{
+.quick h3 {
     font-size: 45px;
     font-weight: 400;
 }
-span{
+
+span {
     color: #FF900E;
 }
 
-.a{
+.a {
     color: #727272;
 }
 
-.quick p{
+.quick p {
     color: rgba(114, 114, 114, 1);
     font-size: 16px;
     font-weight: 400;
     margin: 24px 0 32px 0;
 }
 
-.quick{
+.quick {
     margin-left: 70px;
 }
 
 /* features section  */
 
-#feature-title{
+#feature-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
 
+.features {
+    gap: 100px;
+}
+
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.features h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.feature-card h4 {
+    color: rgba(19, 19, 19, 1);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-card,
+.features p {
+    color: rgba(114, 114, 114, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* Some Facts  */
 
-.facts-container{
+.some h3 {
+    color: black;
+    font-size: 45px;font-weight: 700;
+}
+
+.some p{
+    color: rgba(114, 114, 114, 1);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid #FF900E;
     width: 240px;
     height: 240px;
     border-radius: 8px;
     text-align: center;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.fact-number{
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-.fact-name{
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
+#badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
 /* Our Sponsors  */
-.sponsor-info{
+.sponsor-info {
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
 
-.sponsor-info h3{
+.sponsor-info h3 {
     font-size: 45px;
     font-weight: 700;
     color: rgba(19, 19, 19, 1);
     margin-bottom: 24px;
 }
 
-.sponsor-info p{
+.sponsor-info p {
     color: rgba(114, 114, 114, 1);
     font-size: 16px;
     font-weight: 400;
 }
 
-.sponsor-companis{
+.sponsor-companis {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.sponsor-companis img{
+.sponsor-companis img {
     filter: grayscale(100%);
 }
 
@@ -226,11 +278,15 @@ span{
 
 
 /* responsive media query */
-@media screen and ( max-width: 576px) {
-.navber, .nav-links{
-    flex-direction: column;
-}
-.features-img, .facts-container{
-    grid-template-columns: repeat(1, 1fr);
-}
+@media screen and (max-width: 576px) {
+
+    .navber,
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .features-img,
+    .facts-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
