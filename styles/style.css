@@ -100,11 +100,17 @@ main>section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    width: 50%;
+}
+
+.features-img img {
+    width: 100%;
 }
 
 .features {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .quick h3 {
@@ -112,7 +118,7 @@ main>section {
     font-weight: 400;
 }
 
-span {
+.b {
     color: #FF900E;
 }
 
@@ -128,7 +134,7 @@ span {
 }
 
 .quick {
-    margin-left: 70px;
+    width: 50%;
 }
 
 /* features section  */
@@ -139,14 +145,19 @@ span {
 }
 
 .features {
-    gap: 100px;
+    gap: 146px;
 }
 
 .feature-card {
     padding: 30px;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
     border-radius: 8px;
+}
+
+.version {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 10px 30px;
 }
 
 .features h3 {
@@ -161,61 +172,88 @@ span {
     color: rgba(19, 19, 19, 1);
     font-size: 20px;
     font-weight: 600;
+    margin: 0;
 }
 
 .feature-card,
 .features p {
     color: rgba(114, 114, 114, 1);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+}
+
+.features-left {
+    width: 50%;
+}
+
+.architect-img {
+    width: 50%;
+}
+
+.architect-img img {
+    width: 100%;
+}
+
+#badge {
+    padding: 30px 25px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
 }
 
 /* Some Facts  */
 
 .some h3 {
     color: black;
-    font-size: 45px;font-weight: 700;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
 }
 
-.some p{
+.some p {
     color: rgba(114, 114, 114, 1);
     font-size: 16px;
     font-weight: 400;
-    
+    margin-bottom: 50px;
+
 }
 
 .facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* gap: 20px; */
 }
 
 .fact-card {
     border: 1px solid #FF900E;
-    width: 240px;
-    height: 240px;
     border-radius: 8px;
     text-align: center;
+    padding: 30px 0px;
+    margin: 10px 20px;
 }
 
 .fact-number {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .fact-name {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
-#badge {
-    padding: 45px 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-left: -100px;
-    margin-top: -100px;
+#span {
+    font-size: 50px;
 }
 
 /* Our Sponsors  */
@@ -241,13 +279,25 @@ span {
 .sponsor-companis {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    align-items: center;
 }
 
 .sponsor-companis img {
     filter: grayscale(100%);
 }
 
+footer {
+    background-color: rgba(255, 244, 231, 1);
+    border-radius: 8px;
+}
 
+footer h6 {
+    color: rgba(66, 66, 66, 1);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 39px 210px;
+    margin-top: 130px;
+}
 
 
 
